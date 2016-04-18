@@ -1,0 +1,5 @@
+{
+  "ambientDependencies": {
+    "johnny-five": "registry:dt/johnny-five#0.0.0+20160316155526"
+  }
+}
