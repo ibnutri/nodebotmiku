@@ -4,7 +4,7 @@ var board = new five.Board({
     port: '/dev/cu.NodeBotMiku-DevB'
 });
 board.on("ready", function () {
-    var led = new five.Led(13);
-    // led.pulse(500);
-    led.blink();
+    var led = new five.Led(10);
+    led.pulse(500);
+    // led.blink();
 });
