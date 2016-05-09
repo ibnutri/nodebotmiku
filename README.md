@@ -1,3 +1,4 @@
 # nodebotmiku
 Experiment on Jhonny-five
-Test
+
+The robot created for the well-being of all cats.
