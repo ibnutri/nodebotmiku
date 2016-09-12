@@ -12,10 +12,13 @@ board.on("ready", function(){
 
 	process.stdin.on("keypress", function(ch, key) {
 		if ( key.name === 'left' ) {
-	        led.on();
+	        led.toggle();
 	    }
 	    if( key.name === 'right' ){
 	    	led.off();
 	    }
+	});
+	this.on("exit", function(){
+		led.off();
 	});
 });
