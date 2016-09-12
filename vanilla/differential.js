@@ -63,6 +63,9 @@ board.on("ready", function(){
 	    }
 	    if( key.name === 'down' ){
 	    	resetMotor();
+	    	AIB.write(motorSpeed); // left backward
+			BIB.write(motorSpeed); // right backward
+			setStopTwoSecond();
 	    }
 	    if( key.name === 'up' ){
 	    	resetMotor();
