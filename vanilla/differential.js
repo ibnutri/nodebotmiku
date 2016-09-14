@@ -75,6 +75,7 @@ board.on("ready", function(){
 	    }
 	});
 	function resetMotor(){
+			led13.off();
 	    	AIA.write(0);
 	    	AIB.write(0);
 	    	BIA.write(0);
@@ -83,7 +84,7 @@ board.on("ready", function(){
 	function setStopTwoSecond(){
 		setTimeout(function(){
 			resetMotor();
-		}, 2000);
+		}, 500);
 	}
 	this.on("exit", function(){
 		resetMotor();
